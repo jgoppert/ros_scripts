@@ -13,6 +13,8 @@ then
 	sudo rosdep init
 fi
 sudo sh -c 'echo """
+gazebo_ros:
+    ubuntu: [libgazebo4-dev]
 gazebo:
     ubuntu: [gazebo4]
 """ > /etc/ros/rosdep/local.yaml'
